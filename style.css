@@ -1,0 +1,150 @@
+/* Body styling */
+body {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(90deg, rgba(247,182,42,1) 0%, rgba(34,193,195,1) 100%);
+    font-family: "Montserrat", sans-serif;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container styling */
+.container {
+    margin-top: -175px;
+    width: 100%;
+    max-width: 400px;
+    border: 5px solid aliceblue;
+    border-radius: 10px;
+    background-color: aliceblue;
+    color: black;
+}
+
+.upper {
+    display: flex;
+    height: auto;
+    width: auto;
+}
+
+#heading {
+    margin-left: 20px;
+    font-weight: 700;
+    margin-right: 10px;
+    color: cornflowerblue;
+    font-size: larger;
+}
+
+#logo {
+    margin-top: 12px;
+}
+
+/* Fields section styling */
+.fields {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+#input-box {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    padding: 0px;
+}
+
+/* Add task button styling */
+#add-task {
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    outline: none;
+    padding: 15px 15px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+/* Footer styling */
+.foot {
+    margin-top: 50px;
+    margin-bottom: -100px;
+    padding-top: 50px;
+}
+
+.foot p {
+    text-align: center;
+    color: white;
+    font-size: medium;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: 800;
+    font-size: large;
+}
+
+#profile {
+    color: aliceblue;
+}
+
+/* List item styling */
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Custom bullet point */
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 0px;
+}
+
+/* Checked item styling */
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+/* Checked item bullet point styling */
+ul li.checked::before {
+    background-image: url(images/checked.png);
+}
+
+/* Delete button styling */
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #edeef0;
+}

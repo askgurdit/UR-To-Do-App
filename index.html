@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../To do list app/style.css"> <!-- Link to external CSS file -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); /* Importing Montserrat font */
+    </style>
+    <title>To Do List App</title>
+</head>
+<body>
+    <div class="container"> <!-- Container with white background to hold the entire content -->
+        <div class="upper"> <!-- Upper section containing the heading and logo -->
+            <p id="heading">To-Do List</p> <!-- Heading of the app -->
+            <img id="logo" src="../To do list app/images/icon.png" alt="logo" height="35"  width="35" > <!-- Logo of the app -->
+        </div>
+        <div class="fields"> <!-- Fields section containing input box and add task button -->
+            <input id="input-box" type="text" name="name" placeholder="Enter your task" autocomplete="off"> <!-- Input box for entering tasks -->
+            <button id="add-task" onclick= "addTask()" button">Add Task</button> <!-- Button to add a new task -->
+      </div>
+      <ul id="list-container"> <!-- List container to hold the list of tasks -->
+        <!--<li class="checked">Task 1</li> -->
+        <!--<li>Task 2</li> -->
+        <!--<li>Task 3</li> -->
+      </ul>
+    </div>
+    <footer class="foot"> <!-- Footer section -->
+        <p>Made with &hearts; in India by <a id="profile" href="https://askgurdit.github.io/Responsive-File-Card1/">Gurdit Singh</a></p> <!-- Author information -->
+        <p>&copy; 2024 To-Do Application. All rights reserved.</p> <!-- Copyright information -->
+    </footer>
+</body>
+<script src="../To do list app/logic.js"></script> <!-- Link to external JavaScript file -->
+</html>
